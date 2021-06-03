@@ -1,0 +1,316 @@
+/**
+  관리자 메인  스타일 
+*/	
+	div.content{width:1300px;margin:auto;/*화면 가운데 나오게**/ /* border:1px solid red; */ }
+	div.content aside.admin_main{
+		width:150px; height:700px; background-color:rgb(79,123,240);
+		
+		display:inline-block; float:left;
+		padding:20px 0 0 30px;
+		/* border:1px solid blue; */
+		/* margin-right:20px; */
+	}
+	div.content section#admin_section1 >div table{
+		margin-left:170px;
+	}
+	div.content aside.admin_main ul li{
+		list-style-type:none;
+		padding:3px 0;
+	}
+	div.content aside.admin_main ul li a{
+		color:white;
+		font-size:13px;
+		font-weight:700;
+		text-decoration:none;
+	}
+	div.content aside.admin_main ul li a:hover{
+		text-decoration:underline;
+	
+	}
+	div.content section#admin_section1{
+		margin-left:155px;
+	}
+	
+	
+	table.admin_member_content .member_face{
+		margin-left:10px;
+		margin-right:-30px;
+	}
+	
+/*
+* 회원리스트
+*/
+	/* table.notice_list,table.notice_list th,table.notice_list td, */
+	table.notice_content,table.notice_content th,table.notice_content td,
+	table.admin_member_list,table.admin_member_list th,
+	table.admin_member_list td,
+	table.admin_member_content,table.admin_member_content th,table.admin_member_content td,
+	table.admin_notice_list,table.admin_notice_list th, table.admin_notice_list td,
+	table.admin_notice_content,
+	table.admin_notice_content td,table.admin_notice_content th,
+	table.admin_notice_list th, table.admin_notice_list td,
+	table.admin_notice_content td,table.admin_notice_content th	{
+		border:1px solid #333;
+		border-collapse:collapse; /*보더 에 나타나는 두 줄 같은거 한줄로 만들어줌!*/
+	}
+	
+	table.notice_content,table.notice_content th,table.notice_content td{
+		border:1px solid lightgray;
+		border-collapse:collapse; /*보더 에 나타나는 두 줄 같은거 한줄로 만들어줌!*/
+	}
+	
+	table.notice_list th,table.notice_list td,
+	table.notice_content th,table.notice_content td,
+	table.admin_member_list th, table.admin_member_list td,
+	table.admin_member_content th,table.admin_member_content td,
+	table.admin_notice_list th, table.admin_notice_list td,
+	table.admin_notice_content td,table.admin_notice_content th{
+		padding:15px 40px; /*패딩으로 글자 간격 설정해줘야함 그렇지 않고 height weight쓰면 글자 아래로 늘어난다*/
+		color:#333;
+		font-size:13px;
+	}
+	table.admin_notice_list th:nth-child(2), table.admin_notice_list td:nth-child(2){
+		padding:15px 180px;
+	}
+	
+	/* table.notice_list th, */
+	table.notice_content th,
+	table.admin_member_list th,
+	table.admin_member_content th,
+	table.admin_notice_list th,
+	table.admin_notice_content th{
+		background-color:rgb(236,241,253);
+		paddong:10px 0 ;
+	}
+	section.section1 table.notice_list tr td,
+	table.admin_member_list tr td,
+	table.admin_member_content tr:first-child td,
+	table.admin_notice_list tr td,
+	table.admin_notice_content td{
+		text-align:center;
+	}
+	
+	table.admin_notice_list tr td:nth-child(2),
+	section.section1 table.board tr td:nth-child(2),
+	section.section1 table.notice_list tr td:nth-child(2){
+		text-align:left; 
+		padding-left:30px;
+	}
+	
+	section.section1 table.notice_list tr td:nth-child(2) a,
+	table.admin_member_list tr td:nth-child(2) a,
+	table.admin_notice_list tr td:nth-child(2) a{
+		text-decoration:none;
+		
+	}
+	
+	table.admin_notice_list tr:first-child td{
+		text-align:right;
+		padding:0 10px 10px 0;
+		border:1px solid rgb(253,252,240);
+		border-bottom:1px solid #333;
+	}
+	table.admin_notice_list tr:last-child td{
+		border:1px solid white;
+	}
+	table.admin_notice_list tr td:nth-child(2){
+		padding:10px 30px;
+	}
+	table.admin_member_content tr td
+	{
+		padding-left:30px;
+	
+	}
+	table.admin_member_content tr:first-child td{
+		padding-left:0px;
+	
+	}
+	table.admin_member_content tr:nth-child(4) td{
+		height:150px;
+	}
+	
+	.section1 div.search{
+		display:inline-block;
+		margin-left:120px;
+	}
+	#admin_section1 h1{
+	
+		margin-left:150px;
+	}
+	/**
+	게시판 , 공지사항 관리-글쓰기, 수정폼
+*/	
+	
+
+	 form.admin_notice_write >ul>li, 
+	 form.admin_notice_update >ul>li{
+	 	list-style-type:none;
+	 	margin-bottom:7px;
+	 }
+	 form.board_write >ul>li>label, 
+	 form.board_update ul>li>label{
+		background-color:lightgray;
+		display:inline-block;
+		width:90px;
+		padding:7px 0;
+		text-indent:20px;
+		color:#333;font-size:13px;font-weight:600;
+		border-radius:4px;
+		float:left;
+		margin-right:10px;
+	}
+	 form.admin_notice_write ul>li>label,
+	 form.admin_notice_update ul>li>label{
+	 	background-color:lightgray;
+		display:inline-block;
+		width:90px;
+		padding:7px 0;
+		text-indent:20px;
+		color:#333;font-size:13px;font-weight:600;
+		border-radius:4px;
+		margin-right:10px;
+	 }
+	 
+	 form.admin_notice_write >ul>li>input[type="text"], 
+	 form.admin_notice_update ul>li>input[type="text"],
+	 form.admin_notice_write >ul>li>textarea, 
+	 form.admin_notice_update ul>li>textarea{
+		border:1px solid gray;
+		border-radius:4px;
+		width:65%;
+		padding:6px 10px;
+		color:#333;font-size:12px;
+	}
+	
+	 form.admin_notice_update ul>li>textarea,
+	 form.admin_notice_update ul>li>textarea{
+		 height:200px;
+	}
+	
+	
+	form.admin_notice_write ul>li>input[type="file"],
+	form.admin_notice_update ul>li>input[type="file"]{
+		width:50%;  padding: 3px 0;
+		color:#333;font-size:12px;
+	}
+	
+/* 	form.admin_notice_write >ul>li:last-child button, 
+	form.admin_notice_update ul>li:last-child button{
+		font-size:12px;
+		width:75px; padding:6px 0;
+		border-radius:4px;
+		margin:10px 5px 0 0;
+	} */
+	.section1 table.notice_content tr:nth-child(2) td p,
+	.section1 table.admin_notice_content tr:nth-child(2) td p{
+		padding:10px 20px;
+		/* height:150px; */
+	
+	}
+	/* section.section1 table.notice_list tr:last-child td, */
+	table.admin_notice_content tr:last-child td {
+		border:1px solid rgb(253,252,240);
+		border-top:1px solid #333;
+		padding-top:15px;
+	}
+	section.section1 table.notice_list tr:last-child td{
+		border:1px solid rgb(253,252,240);
+		border-top:1px solid lightgray;
+		padding-top:15px;
+	}
+	table.notice_content tr:last-child td a>button,
+	table.admin_member_content tr:last-child td a>button,
+	table.admin_notice_list tr:first-child td a>button,
+	table.admin_notice_content tr:last-child td a>button  {
+		font-size:12px;
+		width:70px;padding:6px 0;
+		border-radius:4px;
+		margin-right:5px;
+	}
+	form.admin_notice_write >ul>li:last-child, 
+	form.admin_notice_update ul>li:last-child  {
+		text-align:center;
+	}
+	section.section1 table.notice_list tr:last-child:hover,
+	table.admin_notice_list tr:first-child:hover,
+	table.admin_notice_list tr:last-child:hover{
+		background-color:white;
+	}
+	
+	/**
+	게시판 스타일 - 삭제
+*/
+	form.board_delete{ 
+		
+	}
+	form.board_delete img{
+		width:150px;height:180px;
+		margin:20px 0;
+		border-radius:4px
+		/* padding:10px 0; */
+	/* 	border:1px solid red; */ 
+	}
+	form.board_delete div,form.board_delete{
+		text-align:center;
+	}
+	
+	
+	
+	h1.notice_h1{
+		color:rgb(79,123,240);
+		margin : 100px 0 -50px 250px;
+		 
+	}
+	h1.notice_content_h1{
+		color:rgb(79,123,240);
+		margin : 100px 0 -50px 150px;
+		 
+	}
+	
+	table.notice_list th{
+		font-weight:bold;
+		font-size:17px;
+	}
+	table.notice_list td{
+		font-size:15px;
+		font-weight:550;
+	}
+	table.notice_content,table.admin_notice_content{
+		width:1000px; margin:auto; margin-top:60px;  border: 1px solid lightgray;
+	}
+	table.notice_list{
+		width:800px; margin:auto; margin-top:60px;  border: 1px solid lightgray;
+	}
+	
+	table.notice_list, 	table.notice_list th, 	table.notice_list td{
+	border-collapse:collapse; padding:13px;
+	}
+	
+	 table.notice_list tr, .table.notice_list {border:lightgray;}
+	 
+	 table.notice_list th,  table.notice_list td {
+	  	border-right :1px solid white;
+	  	border-left :1px solid white;
+	  	padding :20px;
+	  }
+	  
+	  
+
+	  
+	  table.notice_content tr:nth-child(2)  td{
+	  	text-align:center;
+	  }
+	.btn_style {border-radius:4px; border:none; background-color:rgb(79,123,240); padding:5px 15px; color:white; margin:0px 5px;}
+	
+	 table.notice_content tr:last-child td{
+	  text-align:center;
+	  border : 1px solid white;
+	 }
+	 table.notice_content tr:nth-child(3) p{
+	  text-align:center;
+	  
+	 }
+	#btn_Golist{
+	 
+	}
+	

@@ -1,0 +1,354 @@
+ @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap");
+		* {
+		  font-family: "Noto Sans KR", sans-serif;
+		}
+		
+		/* �α��� �� */
+		.login_form {
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		}
+		/* �α��� �������� */
+		.login_overlay {
+		  background-color: rgba(0, 0, 0, 0.6);
+		  width: 100%;
+		  height: 100%;
+		  position: absolute;
+		}
+		/* �α��� ���� */
+		.login_content {
+		  width: 1000px;
+		  height: 600px;
+		  background-color: #ffffff;
+		  position: relative;
+		  display: flex;
+		  top: 0px;
+		  border-radius: 15px;
+		  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+		}
+		/* �ݱ� ��ư */
+		.login_content .x_btn {
+		  all: unset;
+		  position: absolute;
+		  right: 20px;
+		  top: 10px;
+		  text-decoration: none;
+		  color: gray;
+		  cursor: pointer;
+		}
+		/* �̹��� ���� */
+		.image_form {
+		  flex: 2;
+		}
+		.image_form > img {
+		  padding-top: 120px;
+		  padding-left: 60px;
+		  width: 550px;
+		  height: 400px;
+		}
+		/* �α��� ���� */
+		.input_login_form {
+		  flex: 1.5;
+		  flex-direction: column;
+		  justify-content: space-between;
+		  padding: 10px 10px 20px 10px;
+		}
+		.input_login_form ul {
+		  list-style: none;
+		}
+		.input_login_form li {
+		  padding-bottom: 10px;
+		}
+		.input_login_form a {
+		  text-decoration: none;
+		}
+		.input_login_form .h3_login h3 {
+		  font-size: 24px;
+		  color: #303441;
+		  line-height: 28px;
+		}
+		/** ���̵��й�ȣ������ **/
+		.input_area {
+		  width: 250px;
+		
+		  position: relative;
+		}
+		/* ���̵� ��й�ȣ ��ǲ*/
+		.input_area input {
+		  width: 100%;
+		  padding-top: 30px;
+		  padding-left: 10px;
+		  background-color: transparent;
+		  border: none;
+		  border-bottom: 1px solid #999;
+		  font-size: 15px;
+		  color: black;
+		  outline: none;
+		}
+		/* ���̵� ��й�ȣ ��*/
+		.input_area label {
+		  position: absolute;
+		  left: 10px;
+		  top: 15px;
+		  font-size: 18px;
+		  color: dodgerblue;
+		  transition: all 0.5s ease;
+		}
+		.warning {
+		  color: red !important;
+		  animation: warning 0.3s ease;
+		  animation-iteration-count: 3;
+		}
+		@keyframes warning {
+		  0% {
+		    transform: translateX(-3px);
+		  }
+		  25% {
+		    transform: translateX(3px);
+		  }
+		  50% {
+		    transform: translateX(-3px);
+		  }
+		  75% {
+		    transform: translateX(3px);
+		  }
+		}
+		.input_area input:focus + label,
+		.input_area input:valid + label {
+		  top: 0;
+		  font-size: 12px;
+		  color: #999;
+		}
+		/** �α��ι�ư**/
+		.input_login_form .login_btn #btn_login {
+		  font-weight: bold;
+		  width: 265px;
+		  height: 50px;
+		  background: linear-gradient(to right, rgba(105, 163, 255, 1), rgba(43, 125, 254, 1), rgba(43, 125, 254, 1));
+		  background-size: 200%;
+		  border-radius: 10px;
+		  font-size: 17px;
+		  color: white;
+		  padding-top: 2px;
+		  transition: 0.5s;
+		  box-sizing: border-box;
+		  border: none;
+		  outline: none;
+		  cursor: pointer;
+		}
+		.input_login_form .login_btn #btn_login:hover {
+		  background-position: right;
+		}
+		/** üũ�ڽ� ���̵��й�ȣã�� **/
+		.input_login_form .ch_login,
+		.input_login_form .find_id {
+		  display: inline-block;
+		}
+		.input_login_form .ch_login input {
+		  margin-right: 8px;
+		}
+		.input_login_form .find_id {
+		  margin-left: 41px;
+		}
+		.input_login_form .ch_login label,
+		.input_login_form .find_id a {
+		  font-size: 13px;
+		  color: #222121;
+		}
+		/** �Ǽ� **/
+		.input_login_form li:nth-child(7) div {
+		  margin-top: 20px;
+		  width: 80%;
+		  height: 1px;
+		  background: #8a8686;
+		}
+		/** ����¿����Ű���ȯ���մϴ� **/
+		.input_login_form .login_text {
+		  width: 90%;
+		  height: 60px;
+		}
+		.input_login_form .login_text p {
+		  color: #303441;
+		  font-size: 14px;
+		}
+		/** ȸ������ **/
+		.input_login_form .login_account {
+		  display: block;
+		  border: 1px solid #116ad4;
+		  border-radius: 4px;
+		  width: 257px;
+		  height: 40px;
+		  text-align: center;
+		  line-height: 50px;
+		}
+		.input_login_form .login_account a {
+		  color: #116ad4;
+		}
+		.hidden {
+		  display: none;
+		}
+		.overflo {
+		  overflow: hidden;
+		}
+		.h3_login img {
+		  height: 80px;
+		  padding-left: 90px;
+		}
+		.h3_login h2 {
+		  margin: 2px 0;
+		  color: #333;
+		  text-transform: uppercase;
+		  font-size: 2.5rem;
+		  padding-left: 30px;
+		}
+		
+		/** ���̵� ���ã�� �� **/
+		.find-id-pw-body {
+		  margin: 0;
+		  padding: 0;
+		  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+		}
+		.idpw_header {
+		  width: 100%;
+		  border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+		}
+		div.idpw_top {
+		  width: 1280px;
+		  margin: auto;
+		  height: 60px;
+		}
+		div.idpw_top img.logo {
+		  width: 150px;
+		  float: left;
+		  padding-left: 100px;
+		  padding-top: 10px;
+		}
+		div.idpw_container {
+		  width: 1280px;
+		  height: 800px;
+		  margin: 0 auto;
+		}
+		div.idpw_content {
+		  margin: 0 auto;
+		  width: 400px;
+		  height: 800px;
+		}
+		div.idpw_content h2 {
+		  margin-top: 50px;
+		  margin-bottom: 30px;
+		}
+		div.idpw {
+		  width: auto;
+		  height: 600px;
+		}
+		div.idpw_head {
+		  background-color: #e8e8e8;
+		  padding: 10px 20px;
+		  height: 20px;
+		}
+		div.idpw_body {
+		  padding: 35px 35px 20px 35px;
+		}
+		div.idpw_body input:nth-last-child(){
+		  margin-top: 50px;
+		}
+		div.idpw input {
+		  width: 100%;
+		  height: 50px;
+		  padding-left: 20px;
+		  border-radius: 5px;
+		  border: 1px solid gainsboro;
+		  outline: none;
+		}
+		div.idpw input:first-child {
+		  margin-bottom: 10px;
+		}
+		/* �۾�*/
+		div.idpw small {
+		  margin: 10px 0;
+		  margin-bottom: 10px;
+		  font-size: 11px;
+		  color: #888888;
+		  display: block;
+		}
+		/* ���̵� ��й�ȣã�� ��ư*/
+		div.idpw button {
+		  width: 100%;
+		  height: 50px;
+		  font-size: 20px;
+		  border-radius: 5px;
+		  font-weight: normal;
+		  text-align: center;
+		  cursor: pointer;
+		  border: 1px solid transparent;
+		  background: linear-gradient(to right, rgba(105, 163, 255, 1), rgba(43, 125, 254, 1), rgba(43, 125, 254, 1));
+		  background-size: 200%;
+		  transition: 0.5s;
+		  color: #fff;
+		  outline: none;
+		}
+		/* ���̵� ��й�ȣã�� ��ư ȣ��*/
+		div.idpw button:hover {
+		  background-position: right;
+		}
+		
+		div.pw-content button {
+		  margin-top: 10px;
+		}
+		div.idpw_btn a {
+		  color: rgba(105, 163, 255, 1);
+		  margin: 0 5px;
+		  text-decoration: none;
+		}
+		div.idpw_btn a:last-child {
+		  float: right;
+		}
+		/* ���콺 �������� ������*/
+		div.idpw_btn a:hover {
+		  color: rgba(105, 163, 255, 1);
+		  font-weight: bold;
+		  text-decoration: underline;
+		}
+		/* �ؿ� �ɸ��� �۾�*/
+		div.idpw_copyright {
+		  text-align: center;
+		  color: #888888;
+		}
+		/* ���̵��� ȸ�� �׵θ�*/
+		div.id-content {
+		  border: 1px solid gainsboro;
+		  border-radius: 5px;
+		  margin-bottom: 20px;
+		}
+		/* ��й�ȣ�� ȸ�� �׵θ�*/
+		div.pw-content {
+		  border-radius: 5px;
+		  border: 1px solid gainsboro;
+		}
+		div.idpw_btn {
+		  margin-top: 10px;
+		}
+		/*���� ������ ����*/
+		div.icon-form {
+		  margin-left:5px;
+		  padding-bottom: 10px;
+		  animation: 0.3s ease;
+		  animation-iteration-count: 3;
+		}
+		/*���� ������ ������*/
+		i.fa-exclamation-triangle {
+		  color: #ff7262;
+		  font-size: 13px;
+		}
+		/*���� �޽���*/
+		p.warningmsg {
+		  display: inline;
+		  font-size: 13px;
+		  color: #ff7262;
+		}

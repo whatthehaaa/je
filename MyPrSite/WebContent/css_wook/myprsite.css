@@ -1,0 +1,571 @@
+		/**남욱**/
+		
+		div.content{width:1300px;margin:auto;/*화면 가운데 나오게**/ /* border:1px solid red; */ }
+		section.section1{/* border:1px solid purple; */overflow:auto;width:100%;
+		background-color:#f8f8f8;}
+
+		section.section1  div.m1{/* border:1px solid green; */float:left;}
+		section.section1  div.m2{
+		/* background-color:purple; */
+		/* position:fixed; */
+		margin:85px 5px 50px 16px;overflow:hidden;
+		display:inline-block;/* width:850px; */ width:850px;}
+		
+		section.section1  div.m2>div{
+			/* border:1px solid red; */clear:both;
+		display:inline-block;width:880px;margin-right:10px;
+		}
+		section.section1 aside.my_aside{
+		   /*  position: relative; */
+   			float: left;  
+    		margin-right: 20px;
+    		width: 380px;
+    		background-color: #f8f8f8; 
+    		/* border:1px solid rgb(163,163,194); border-radius:55px; */
+    		
+		}
+		section.section1 aside.my_aside div.info{ width:100%;float:left;  }
+		section.section1>div.m1>aside.my_aside>div.info>ul{text-align:center;}
+		section.section1>div.m1>aside.my_aside>div.info>ul li{
+			list-style-type:none;
+		
+		}
+		section.section1>div.m1>aside.my_aside>div.info>ul>li:nth-child(1){
+			/* border:1px solid purple; */ /* background-color:rgb(79,123,240); */
+		}
+		section.section1>div.m1>aside.my_aside>div.info>ul>li:nth-child(2),
+		section.section1>div.m1>aside.my_aside>div.info>ul>li:nth-child(3){
+			text-align:center;
+		}
+		section.section1>div.m1>aside.my_aside>div.info>ul>li:nth-child(2) div
+		{
+			display:inline-block; width: 100px;border:1px solid gray ; border-radius:2px;padding:5px;margin:1px;
+			color: rgb(79,123,240);
+		}
+		section.section1>div.m1>aside.my_aside>div.info>ul>li span.thum,
+		.section1>div>aside.my_aside_profile>span.thum{
+			display:inline-block;width:248px;height:248px;border-radius:50%;/* border:1px solid #f8f8f8; */
+			overflow:hidden; background-color:#f8f8f8;
+			background-image: url("http://localhost:9000/MyPrSite/images/my_people_250x250.png");
+			margin:60px 0 ;
+		}
+		section.section1>div.m1>aside.my_aside>div.info>ul>li span.thum{
+		background-size:100% 100%;
+		}
+		
+		.section1>div>aside.my_aside_profile>span.thum{
+			margin:50px 5px 10px 110px; 
+			background-size:100% 100%;
+			
+		}
+		section.section1>div.m1>aside.my_aside>div.info>ul>li>div.prf{
+		width:180px;display:inline-block;text-align:center;margin-top:10px;
+		font-size:15px;font-weight:500;background-color:#f8f8f8;
+		
+		
+		}
+		section.section1>div.m1>aside.my_aside>div.info>ul>li div.prf a{
+			color:color:rgb(22,27,42); text-decoration:underline;
+		}
+		section.section1>div.m1>aside.my_aside>div.info>ul>li div.prf a:hover{
+			 color:rgb(79,123,240);
+		}
+/* 		*******팝업창************
+		input[id*="popup"]{
+			display:none;
+		}
+		input[id*="popup"] + label{
+			display:inline-block;
+			padding:20px;
+			background:yellow;
+			color:black;
+		}
+		input[id*="popup"] + label +div {
+			position:fixed;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			z-index:100;
+		}
+		input[id*="popup"] + label +div > div {
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			width:1000px;
+			height:650px;
+			border-radius:10px;
+			background:#fff;
+			z-index:2;
+			
+		}
+		*x 버튼 *
+		input[id*="popup"] + label +div > div >label{ 
+			position:absolute;
+			top:1%;
+			right:1%;
+			transform:translate(40%,-40%);
+			padding:10px;
+			font-size:25px;
+			color:gray;
+			background:#dd5347;
+			border-radius:100%;
+			z-index:1;
+		
+		}
+		* 뒷배경 *
+		input[id*="popup"] + label +div > label{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			
+			background:rgba(0,0,0,.6);
+			border-radius:100%;
+			 z-index:1; 
+			 overflow:hidden;
+		}
+		input[id*="popup"] + label +div{
+			opacity:0;visibility:hidden;transition:all 1s;
+		}
+		input[id*="popup"]:checked + label +div{
+			opacity:1;  visibility:visible; 
+		}  */
+		
+ 		/**************aside 부분 여기까지*************/
+		
+		section.section1>div.m2>div>ul{
+			list-style-type:none;
+			margin-left:5px;
+			text-align:center;
+		}
+		section.section1>div.m2>div>ul li{display:inline-block; margin:30px 70px;}
+		section.section1>div.m2>div>ul li span{
+		display:inline-block;width:125px;height:125px;border-radius:50%;border:1px solid rgb(79,123,240);
+		/* overflow:auto; */ background-color:rgb(79,123,240); color:white; }
+		/********************section1 끝남************************/
+		
+		section.section2{
+			margin-top:50px;
+		}
+		section.section2>div.mypage_bar{
+			margin-bottom:60px;
+		}
+		section.section2>div.mypage_bar>ul{
+			text-align:center;
+			/* border:1px solid red; */
+			list-style-type:none;
+			
+		}
+		section.section2>div.mypage_bar>ul>li{
+			width:19.7%;
+			/* border:1px solid black; */
+			margin:0px -1px;
+			text-align:center;
+			padding:30px 85px;
+			display:inline-block;
+			background-color:rgb(236,241,253);
+			
+		}
+		section.section2>div.mypage_bar>ul>li div{
+			 color:rgb(79,123,240); font-size:20px;font-weight:800;
+		
+		}
+		section.section2>div.mypage_bar>ul>li:first-child{
+			/* argin-left:13px; */
+		}
+		section.section2>div.j1>ul>li>div{
+		color:rgb(79,123,240);}
+		section.section2>div.mypage_content_introduce p.mypage_introduce{
+			color:gray;
+		}
+		section.section2>div.mypage_content_introduce div.bar,
+		section.section2>div.mypage_content_portfolio div.bar,
+		section.section2>div.mypage_content_evaluation div.bar{
+			font-size:18px;color:rgb(79,123,240);font-weight:500;
+			margin:30px 0;
+		}
+
+		.section2>div.mypage_content_portfolio>div.p_select{
+			text-align:right; margin:0 10px 5px 0;
+		}
+		.section2>div.mypage_content_portfolio>div.p_select>select.p_select_bar{
+			 display:inline-block; width:250px; height:30px;background-color:rgb(241,243,244);
+			  border-radius:5px; border:1px solid rgb(79,123,240);
+		}
+
+		.section2>div.mypage_content_portfolio_content{
+			background-color:rgb(241,243,244);
+			border:1px solid rgb(79,123,240); border-radius:15px;padding:150px 0;
+			text-align:center; display:inline-block;width:100%;color:rgb(79,123,240);
+		}
+		.section2>div.mypage_content_portfolio_content>ul>li{
+			list-style-type:none; color:rgb(79,123,240);
+		}
+		.section2>div.mypage_content_portfolio_content>ul>li img{
+			display:inline-block;
+			width:180px;height:100px; 
+		
+		}
+		.section2>div.star{
+			text-align:center; border:1px solid rgb(79,123,240); border-radius:15px;
+			background-color:rgb(241,243,244);color:rgb(79,123,240);
+			padding:100px 0;margin:10px 0 50px 0;font-size:50px;font-weight:500;
+		}
+		
+		/******남욱 -프로필 등록 수정********/
+		.section1>div.pf_area1{width:100%;height:550px;}
+		.section1>div>aside.my_aside_profile{
+			float:left; /* border:1px solid purple; */width:480px;height:500px;
+			/* display:inline-block; */
+		}
+
+		.section1>div>aside.my_aside_profile>label span.thum_insert{
+			display:inline-block;width:64px;height:65px;border-radius:50%;/* border:1px solid #f8f8f8; */
+			overflow:hidden; 
+			background-image: url("http://localhost:9000/MyPrSite/images/camera_64x64.png");
+			margin-left:-85px;margin-top:-55px;
+		}
+		.section1>div>aside.my_aside_profile>input#file{display:none;}
+		.section1>div>aside.my_aside_profile>div{
+			margin-top:15px;
+			text-align:center;
+		}
+		.section1>div>aside.my_aside_profile>div.pf_update_job{margin: 10px 0;}
+		/* .section1>div>aside.my_aside_profile>div.pf_update_name>label.name_header{font-size:20px; border:1px solid gray;background-color:rgb(79,123,240);color:white;}
+		.section1>div>aside.my_aside_profile>div.pf_update_name>label.name_content{font-size:20px; border:1px solid gray;color:rgb(79,123,240);} */
+		.section1>div>aside.my_aside_profile>div.pf_update_name>ul{text-align:left; }
+		.section1>div>aside.my_aside_profile>div.pf_update_name>ul>li{border-radius:15px;
+		/* border:1px solid gray; */list-style-type:none;text-align:center;margin-left:-20px;margin-right:20px;padding:15px 0;
+		}
+		.section1>div>aside.my_aside_profile>div.pf_update_name>ul>li:first-child,
+		.section1>div>aside.my_aside_profile>div.pf_update_name>ul>li:nth-child(3){
+			background-color:rgb(236,241,253);
+		}
+		.section1>div>aside.my_aside_profile>div.pf_update_name>ul>li:nth-child(2){
+			background-color:white;padding:10px 0; color:gray;
+		}
+		.section1>div>aside.my_aside_profile>div.pf_update_name>ul>li:nth-child(3)>select.area_select{
+			border-radius:10px; padding:5px 55px;margin-left:10px;
+		}
+		.section1>div>aside.my_aside_profile>div.pf_update_job>label>input{color:rgb(79,123,240);text-align:center;width:220px;}
+		
+		.section1>div>div.pf_text{
+			width:60%;height:500px;  
+			display:inline-block;
+			/* border:1px solid red; */
+			text-align:center;
+			position:relative;
+		}
+		.section1>div>div.pf_text>span{
+			
+			position:absolute;
+			top:25%;
+			right:8%;
+			transform:translate(10%,50%);
+			font-size :25px;
+			color:rgb(79,123,240);
+		}
+		.section1>div>div.pf_text>span.counter{
+			
+			position:absolute;
+			top:97%;
+			right:6%;
+			transform:translate(10%,50%);
+			font-size :15px;
+			color: gray;
+		}
+
+		.section1>div>div.pf_text>textarea{
+		margin: 185px 0 0 0; 
+		width:700px; height:300px; resize:none;
+		border:0.1px solid gray;border-radius:5px; font-size:25px;
+		}
+		textarea:focus {
+    		outline: none;
+		}
+		select:focus{
+			outline: none;
+		}
+		/*********프로필 section 1 부분끝남***********/
+		
+		
+		
+		
+		/*********프로필 section 2 시작***********/
+
+		.section2>div.content_name,
+		.section3>div.content_name,
+		.section4>div.content_name,
+		.section5>div.content_name,
+		.section6>div.content_name,
+		.section7>div.content_name{color: rgb(79,123,240); font-size:26px;margin-bottom:10px;}
+		.section2>div.pf_area2{width:100%;height:190px;background-color:#f8f8f8;  /* position:relative; */ padding-top:1px;}
+		.section2>div.pf_area2>div.pf_job{
+			margin:10px 0 4px 0;  text-align:center;
+		}
+		.section2>div.pf_area2>div.pf_job>select.job_select,
+		.section2>div.pf_area2>div.pf_job>select.job_select_2{
+			border-radius:10px; width:580px ;height:30px; text-align:right;
+
+		}
+		.section2>div.pf_area2>div.pf_job>select.job_select,
+		.section2>div.pf_area2>div.pf_job>select.job_select_2{
+			padding-left:240px;border:1px solid rgba(105,105,150,.12);
+		}
+
+		.section2>div.pf_area2>div.pf_job_select{ text-align:center;}
+		.section2>div.pf_area2>div.pf_job_select>div.pf_job_select_area{
+		width:1160px; height:90px; overflow:auto;
+			 border-radius:10px; background-color:white;
+			 border:1px solid rgba(105,105,150,.12);
+			 display:inline-block; /* border:1px solid red; */ margin-top:20px;
+		}
+		.section2>div.pf_area2>div.pf_job_select>div.pf_job_select_area>ul{
+			list-style-type:none; display:inline-block;
+		}
+		.section2>div.pf_area2>div.pf_job_select>div.pf_job_select_area>ul>li.job_select_content{
+			display:inline-block;
+			color:rgb(79,123,240);
+			background-color:rgb(236,241,253);
+			/* width:230px; */
+			padding:3px;
+			border-radius:10px;
+			margin:0 5px 5px 0;
+		}
+		.section2>div.pf_area2>div.pf_job_select>div.pf_job_select_area>ul>li.job_select_content>button#x_btn{
+			color:gray; margin:10px 1px 8px 8px; border:none;outline: none; background-color:rgb(236,241,253);
+		}
+		.section2>div.pf_area2>div.pf_job_select>div.pf_job_select_area>ul>li.job_select_content>button#x_btn:hover{
+			 text-decoration:underline; }
+	
+		.section2>div.pf_area2>span.job_count_area{
+			display:block;width:150px;margin:-5px 0 0 1145px;color:gray;
+		}
+		footer{clear:both;}
+		
+		
+		/*********프로필 section3 시작*********/
+		.section3>div.content_name,.section4>div.content_name,
+		.section5>div.content_name,.section6>div.content_name,.section7>div.content_name{margin-top:35px;}
+		.section3>div.pf_area3{
+			width:100%;height:350px;
+			background-color:#f8f8f8;  
+			 padding-top:1px;
+			 text-align:center;
+		}
+		.section3>div.pf_area3>div.category-tech1,
+		.section3>div.pf_area3>div.category-tech2,
+		.section3>div.pf_area3>div.category-tech-select{
+			margin-left:10px;
+			margin-top:20px;
+			border:1px solid rgba(105,105,150,.12);
+			display:inline-block;
+			width:380px;
+			height:300px;
+			text-align:center;
+			overflow:auto;
+			background-color:white;
+		}
+		.section3>div.pf_area3>div.category-tech1>div.category-tech1-select{
+			border:1px solid rgba(0,0,0,..12);padding:20px 0;background-color:white; text-algin:center;
+		}
+		.section3>div.pf_area3>div.category-tech1>div.category-tech1-select:hover{
+			background-color:rgb(236,241,253);
+		}
+		.section3>div.pf_area3>div.category-tech2>div{
+			 margin:15px 0; 
+		}
+		.section3>div.pf_area3>div.category-tech2>div:hover{
+			color:rgb(79,123,240); text-decoration:underline;
+		}
+		.section3>div.pf_area3>div.category-tech2>div:click{
+			color:red;
+		}
+		.section3>div.pf_area3>div.category-tech-select>div{
+		   text-algin:center;
+		   display:inline-block;
+			color:rgb(79,123,240);
+			background-color:rgb(236,241,253);
+			width:270px;
+			padding:3px;
+			border-radius:10px;
+			margin:15px 0 0 0;
+		}
+		.section3>div.pf_area3>div.category-tech-select>div>button#x_btn{
+			color:gray; margin:10px 1px 8px 8px; border:none;outline: none; background-color:rgb(236,241,253);
+		}
+		.section3>div.pf_area3>div.category-tech-select>div>button#x_btn:hover{
+			 text-decoration:underline; }
+		
+		.section3>div.pf_area3>span.tech_count_area{
+			display:block;width:150px;margin:-5px 0 0 1120px;color:gray;
+		}
+	   /*********section4 대학 전공 입력부분**************/
+
+	   .section4>div.pf_area4{
+			width:100%;height:390px;
+			background-color:#f8f8f8;  
+			 padding-top:1px;
+			 
+		}
+		.section4>div.pf_area4>div.university_major_area{ text-align:none; height:40px;}
+		.section4>div.pf_area4>div.university_major_area>h4{ font-weight:450;margin-left:40px;margin-top:20px;}
+		.section4>div.pf_area4>div.university_major_area_input{}
+		.section4>div.pf_area4>div.university_major_area_input>input.univercity_input,
+		.section4>div.pf_area4>div.university_major_area_input>input.univercity_major_input,
+		.section4>div.pf_area4>div.university_major_area_input>select.attendance_status{
+		border:1px solid rgba(60,16,150,.1);height:50px;margin-top:-8px;padding-left:20px;outline: none;border-radius:10px;
+		}
+		.section4>div.pf_area4>div.university_major_area_input>input.univercity_input{  width:550px;margin-left:40px;}
+		.section4>div.pf_area4>div.university_major_area_input>input.univercity_input::placeholder {font-weight:500; color:gray;}
+ 		.section4>div.pf_area4>div.university_major_area_input>input.univercity_major_input{  width:350px; margin-left:10px;}
+		.section4>div.pf_area4>div.university_major_area_input>select.attendance_status{ font-weight:500; color:gray; width:150px; height:53px;margin-left:10px;}
+		.section4>div.pf_area4>h4.h4_certificate,
+		.section5>div.pf_area5>h4.h4_certificate_area_input,
+		.section6>div.pf_area6>h4.h4_certificate_area_input,
+		.section7>div.pf_area7>h4.h4_tech_3_input,
+		.section7>div.pf_area7>div.tech3_area_input>h4.h4_tech_3_input{
+			font-weight:450;margin-left:40px;margin-top:20px;
+		}
+		.section7>div.pf_area7>div.tech3_area_input>div {
+			margin-top :5px; 
+		}
+		.section4>div.pf_area4>h4.h4_certificate>span,
+		.section5>div.pf_area5>h4.h4_certificate_area_input>span,
+		.section6>div.pf_area6>h4.h4_certificate_area_input>span,
+		.section7>div.pf_area7>h4.h4_tech_3_input>span,
+		.section7>div.pf_area7>div.tech3_area_input>h4.h4_tech_3_input>span{
+		font-weight:400;font-size:13px;color:rgb(79,123,240);
+		}
+		.section4>div.pf_area4>div.university_certificate>label>span,
+		.section5>div.pf_area5>div.certificate_area_input>label>span,
+		.section6>div.pf_area6>div.certificate_area_input>label>span,
+		.section7>div.pf_area7>div.tech3_area_input>div>label>span{
+		border-radius:10px;color:rgb(79,123,240);margin-left:40px;padding:20px;
+		width:200px;display:inline-block;text-align:center;
+		background-color:rgba(165,190,175,.12);
+		}
+		.section4>div.pf_area4>div.university_certificate>input#univercity_file,
+		.section5>div.pf_area5>div.certificate_area_input>input#certificate_file,
+		.section6>div.pf_area6>div.certificate_area_input>input#career_file,
+		.section7>div.pf_area7>div.tech3_area_input>div>input#top1_file,
+		.section7>div.pf_area7>div.tech3_area_input>div>input#top2_file,
+		.section7>div.pf_area7>div.tech3_area_input>div>input#top3_file,
+		.section7>div.pf_area7>div.tech3_area_input>div>input#video_file,
+		.section7>div.pf_area7>div.tech3_area_input>div>input#video_img_file{
+		 margin-left:-250px; padding:20px 0; opacity:0;
+		 }
+		.section4>div.pf_area4>div.university_certificate>span#file_name,
+		.section5>div.pf_area5>div.certificate_area_input>span#certificate_file_name,
+		.section6>div.pf_area6>div.certificate_area_input>span#certificate_career_file_name,
+		.section7>div.pf_area7>div.tech3_area_input>div>span#certificate_career_file_name{
+			color:gray;font-size:12px;
+		}
+		.section4>div.pf_area4>div.university_certificate>div,
+		.section5>div.pf_area5>div.certificate_area_input>div,
+		.section6>div.pf_area6>div.certificate_area_input>div,
+		.section7>div.pf_area7>div.tech3_area_input>div.h4_tech3_area,
+		.section7>div.pf_area7>div.tech3_area_input>div.tech3_area,
+		.section7>div.pf_area7>div.tech3_area_input>div.pcontent
+		{
+		margin-left:40px;
+		}
+		.section4>div.pf_area4>div.university_certificate>div>p,
+		.section5>div.pf_area5>div.certificate_area_input>div>p,
+		.section6>div.pf_area6>div.certificate_area_input>div>p,
+		.section7>div.pf_area7>div.tech3_area_input>div.pcontent>p{
+		background-color:rgb(236,241,253);border-radius:10px;
+		display:inline-block;width:1200px;height:125px;
+		}
+		.section4>div.pf_area4>div.university_certificate>div>p>span,
+		.section5>div.pf_area5>div.certificate_area_input>div>p>span,
+		.section6>div.pf_area6>div.certificate_area_input>div>p>span,
+		.section7>div.pf_area7>div.tech3_area_input>div.pcontent>p>span{
+		color:rgb(79,123,240);
+		}
+		/***section5 자격증 입력부분 ***/
+		.section5>div.pf_area5{
+			width:100%;height:390px;
+			background-color:#f8f8f8;  
+			 padding-top:1px;
+			 
+		}
+		.section5>div.pf_area5>h4_div.certificate_area,
+		.section5>div.pf_area5>h4_div.career_area{ 
+			text-align:none; height:40px;
+		}
+		.section5>div.pf_area5>div.h4_certificate_area>h4,
+		.section6>div.pf_area6>div.h4_career_area>h4{ 
+		font-weight:450;margin-left:40px;margin-top:20px;
+		}
+		.section5>div.pf_area5>div.certificate_area>input.certificate_area_input1,
+		.section5>div.pf_area5>div.certificate_area>input.certificate_area_input2,
+		.section5>div.pf_area5>div.certificate_area>input.certificate_area_input3,
+		.section6>div.pf_area6>div.career_area>input.career_area_input1,
+		.section6>div.pf_area6>div.career_area>input.career_area_input2,
+		.section6>div.pf_area6>div.career_area>input.career_area_input3,
+		.section6>div.pf_area6>div.career_area>select.career_year,
+		.section6>div.pf_area6>div.career_area>select.career_month,
+		.section7>div.pf_area7>div.tech3_area_input>div.tech3_area>input.tech_area_input1,
+		.section7>div.pf_area7>div.tech3_area_input>div.tech3_area>input.tech_area_input2,
+		.section7>div.pf_area7>div.tech3_area_input>div.tech3_area>input.tech_area_input3{
+		border:1px solid rgba(60,16,150,.1);height:50px;margin-top:-8px;padding-left:20px;outline: none;border-radius:10px;
+		}
+		.section7>div.pf_area7>div.tech3_area_input>input.video_name_input1{
+		border:1px solid rgba(60,16,150,.1);height:50px;margin-top:-8px;padding-left:20px;outline: none;border-radius:10px;
+		width:250px;margin-left:40px;
+		}
+		.section7>div.pf_area7>div.tech3_area_input>input.video_content_input2{
+		border:1px solid rgba(60,16,150,.1);height:50px;margin-top:-8px;padding-left:20px;outline: none;border-radius:10px;
+		width:800px; margin-left:10px;
+		}
+		.section5>div.pf_area5>div.certificate_area>input.certificate_area_input1{
+			width:550px;margin-left:40px;
+		}
+		.section5>div.pf_area5>div.certificate_area>input.certificate_area_input2{
+			width:200px;margin-left:10px;
+		}
+		.section5>div.pf_area5>div.certificate_area>input.certificate_area_input3{
+			width:300px;margin-left:10px;
+		}
+		/****section6 경력 입력부분****/
+		.section6>div.pf_area6{
+			width:100%;height:390px;
+			background-color:#f8f8f8;  
+			 padding-top:1px;
+			 
+		}
+		.section6>div.pf_area6>div.career_area>input.career_area_input1{
+			width:300px;margin-left:40px;
+		}
+		.section6>div.pf_area6>div.career_area>input.career_area_input2{
+			width:250px;margin-left:5px;
+		}
+		.section6>div.pf_area6>div.career_area>input.career_area_input3
+		{
+			width:200px;margin-left:5px;
+		}
+		.section6>div.pf_area6>div.career_area>select.career_year,
+		.section6>div.pf_area6>div.career_area>select.career_month{
+			width:150px;margin-left:5px;
+			font-weight:500; color:gray; width:150px; height:54px;margin-left:5px;
+		}
+		
+		.section7>div.pf_area7{
+			width:100%;height:1000px;
+			background-color:#f8f8f8;  
+			 padding-top:1px;
+			 
+		}
+		
+		.section7>div.save_area{text-align:right;margin-top:200px;}
+		.section7>div.save_area .save{
+			display:inline-block;width:200px; height:70px;border:1px solid rgb(79,123,240);border-radius:10px;
+		background-color:rgb(79,123,240);color:rgb(236,241,253);outline: none;
+		}
+		.section7>div.save_area .save:hover{
+			background-color:rgb(236,241,253);color:rgb(79,123,240);border:1px solid rgb(79,123,240);border-radius:10px;
+		}
